@@ -1,0 +1,283 @@
+{
+	"info": {
+		"_postman_id": "6aaca3fd-530f-4c4d-a413-5a1e4f4c9695",
+		"name": "UserObjectProject",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23183589"
+	},
+	"item": [
+		{
+			"name": "PostUser",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "EAAAAPFxZcPBeJlORn0U5FW+qPjDiMJ+VDmdseMOdIB2zVCqhQiQ/BDsMJrT6aJhoDcD74dLtyPzWoM7dJPpea/c7GvZrCjoml2Vtd2zLvqvJVohkImYzSmvW3U0GYMxM8WhTg==",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Username\":\"Stacy\",\r\n    \"Email\":\"Stacy@gmail.com\",\r\n    \"Password\":\"St5@rgt\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5075/api/UserObject",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5075",
+					"path": [
+						"api",
+						"UserObject"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllUsers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "EAAAAPFxZcPBeJlORn0U5FW+qPjDiMJ+VDmdseMOdIB2zVCqhQiQ/BDsMJrT6aJhoDcD74dLtyPzWoM7dJPpea/c7GvZrCjoml2Vtd2zLvqvJVohkImYzSmvW3U0GYMxM8WhTg==",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Username\":\"jh\",\r\n    \"Email\":\"jku\",\r\n    \"Password\":\"kil\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5075/api/UserObject",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5075",
+					"path": [
+						"api",
+						"UserObject"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetUser",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "EAAAAPFxZcPBeJlORn0U5FW+qPjDiMJ+VDmdseMOdIB2zVCqhQiQ/BDsMJrT6aJhoDcD74dLtyPzWoM7dJPpea/c7GvZrCjoml2Vtd2zLvqvJVohkImYzSmvW3U0GYMxM8WhTg==",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5075/api/UserObject/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5075",
+					"path": [
+						"api",
+						"UserObject",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateUser",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "EAAAAPFxZcPBeJlORn0U5FW+qPjDiMJ+VDmdseMOdIB2zVCqhQiQ/BDsMJrT6aJhoDcD74dLtyPzWoM7dJPpea/c7GvZrCjoml2Vtd2zLvqvJVohkImYzSmvW3U0GYMxM8WhTg==",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Username\":\"Stacy_updated\",\r\n    \"Email\":\"alternate@gmail.com\",\r\n    \"Password\":\"kilop\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5075/api/UserObject/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5075",
+					"path": [
+						"api",
+						"UserObject",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteUser",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "EAAAAPFxZcPBeJlORn0U5FW+qPjDiMJ+VDmdseMOdIB2zVCqhQiQ/BDsMJrT6aJhoDcD74dLtyPzWoM7dJPpea/c7GvZrCjoml2Vtd2zLvqvJVohkImYzSmvW3U0GYMxM8WhTg==",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Username\":\"jhtyu\",\r\n    \"Email\":\"yui\",\r\n    \"Password\":\"kil\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5075/api/UserObject/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5075",
+					"path": [
+						"api",
+						"UserObject",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetUserLoginToken",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5075/api/Login/abc@gmail/sdfsdf",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5075",
+					"path": [
+						"api",
+						"Login",
+						"abc@gmail",
+						"sdfsdf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostUserLoginToken",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userEmail\": \"stacy@gmail.com\",\r\n  \"password\": \"string\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5075/api/Login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5075",
+					"path": [
+						"api",
+						"Login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
